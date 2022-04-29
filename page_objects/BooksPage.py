@@ -13,6 +13,5 @@ class BooksPage:
 
     def selectFirstBookNouveautes(self):
         self.driver.find_element(By.CSS_SELECTOR, self.premier_article_nouveaute).click()
-        wait = WebDriverWait(self.driver, 3)
-        wait.until(expected_conditions.invisibility_of_element_located((By.CSS_SELECTOR, self.premier_article_nouveaute)))
+
 
